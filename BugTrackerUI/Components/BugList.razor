@@ -30,7 +30,7 @@
     protected override void OnInitialized()
     {
         Bugs = BugService.GetBugs()
-            .OrderBy(c => c.Priority).ToList();
+            .OrderBy(x => x.Priority).ToList();
     }
 
 }
